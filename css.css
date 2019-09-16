@@ -1,0 +1,24 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+#container{
+    grid-template-columns: 25% 50% 25%;
+    display: grid;
+    margin: none;
+}
+
+#navbar{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#tweets{
+grid-column-start: 2;
+grid-column-end: 3;
+}
+
+#trends{
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
