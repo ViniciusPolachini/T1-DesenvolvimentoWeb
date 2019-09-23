@@ -3,22 +3,76 @@
 	margin: 0;
 }
 #container{
-    grid-template-columns: 25% 50% 25%;
+    grid-template-columns: 20% 55% 25%;
     display: grid;
     margin: none;
 }
 
+/*NAVBAR*/
 #navbar{
     grid-column-start: 1;
     grid-column-end: 2;
+    height: 100vh;
+    border-right: solid gray 2px;
 }
 
+#navbar button{
+    width: 15vw;
+    height: 7vh;
+    text-align: justify;
+    font-family: arial;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 100px;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+#navbar  img{
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    margin-right: 10%;
+    background: none;
+    align-items: center;
+    margin-left: 10px;
+    float: center;
+}
+
+#ButtonTweet{
+    background-color: #01A9DB;
+    color:white;
+    text-align: center !important;
+}
+#navbar button:hover{
+    background-color: rgba(46, 204, 250, 0.2);
+}
+
+#ButtonTweet:hover{
+    background-color: #2ECCFA !important;
+}
+
+.nav{
+    display: block;
+    border-style: none;
+    background-color: white;
+    text-decoration:none;
+}
+/*------------------------*/
+
+/*TWEETS*/
 #tweets{
 grid-column-start: 2;
 grid-column-end: 3;
 }
+/*------------------------*/
 
+/*TRENDS*/
 #trends{
     grid-column-start: 3;
     grid-column-end: 4;
+    border-left: solid gray 2px;
 }
+
+
+
