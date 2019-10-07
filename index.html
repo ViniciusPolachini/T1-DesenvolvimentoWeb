@@ -1,28 +1,167 @@
 <html>
     <html>
-            <link rel="stylesheet" type="text/css" href="css.css">
+        <title> Twitter</title >
+            <meta charset= " utf-8 " >
+            <meta name= " viewport " content= " width=device-width ,
+            initial-scale=1.0 ">
+        <link rel="stylesheet" type="text/css" href="css.css">
     </html>
     <body>
         <div id="container"> 
             <div id="navbar">
-                <img class="nav" src="Imagens/icon1.png"></img>
-                <button class="nav"><img class="nav" src="Imagens/icon2.png">Menu</button>
-                <button class="nav"><img class="nav" src="Imagens/icon3.png">Explore</button>
-                <button class="nav"><img class="nav" src="Imagens/icon4.png">Notifications</button>
-                <button class="nav"><img class="nav" src="Imagens/icon5.png">Messages</button>
-                <button class="nav"><img class="nav" src="Imagens/icon6.png">Bookmark</button>
-                <button class="nav"><img class="nav" src="Imagens/icon7.png">List</button>
-                <button class="nav"><img class="nav" src="Imagens/icon8.png">Profile</button>
-                <button class="nav"><img class="nav" src="Imagens/icon9.png">More</button>
-                <button class="nav" id="ButtonTweet">Tweet</button>
+                <div class="fixo">
+                    <img class="nav" src="Imagens/icon1.png"></img>
+                    <button class="nav"><img src="Imagens/icon2.png"><p>Início</p></button>
+                    <button class="nav"><img src="Imagens/icon3.png"><p>Explorar</p></button>
+                    <button class="nav"><img src="Imagens/icon4.png"><p>Notificações</p></button>
+                    <button class="nav"><img src="Imagens/icon5.png"><p>Mensagens</p></button>
+                    <button class="nav"><img src="Imagens/icon6.png"><p>Marcador</p></button>
+                    <button class="nav"><img src="Imagens/icon7.png"><p>Lista</p></button>
+                    <button class="nav"><img src="Imagens/icon8.png"><p>Perfil</p></button>
+                    <button class="nav"><img src="Imagens/icon9.png"><p>Mais</p></button>
+                    <button class="nav" id="ButtonTweet">Tweet</button>
+                </div>
             </div>
 
             <div id="tweets">
-                    <h2>tweets</h2>
+                    
+                    
+                        <div class="PaginaInicial">
+                            <div class="fixo PaginaInicial" >
+                            <h3>Página inicial</h3>
+                            </div>
+                        </div>
+                    
+                    <div id="postar">
+                            <img class="perfil" src="Imagens/icon8.png">
+                            <input placeholder="O que está acontendo?"> 
+                            <div id="botoesPostar"> 
+                                <div class="direita"> 
+                                    <button></button>
+                                    <button></button>
+                                    <button></button>
+                                    <button></button>
+                                </div>
+                                <div class="esquerda">
+                                    <button></button>
+                                    <button></button>
+                                    <button id="Tweetar"></button>
+                                </div>
+                            </div>
+                    </div>
+                    <div id="Feed">
+                        <div class="tweet">
+                            <div class="titulo">
+                                <img>
+                                <p></p>
+                                <p></p>
+                            </div>
+                            <img class="conteudo" src="Imagens/fox_fantastic_predator_132021_3840x2160.jpg">
+                            <div class="btns">
+                                <button></button>
+                                <button></button>
+                                <button></button>
+                                <button></button>
+                            </div>
+                        </div>
+                        <div class="tweet">
+                            <div class="titulo"></div>
+                            <img class="conteudo">
+                            <div class="btns"></div>
+                        </div>
+                        <div class="tweet">
+                            <div class="titulo"></div>
+                            <img class="conteudo">
+                            <div class="btns"></div>
+                        </div>
+                        <div class="tweet">
+                            <div class="titulo"></div>
+                            <img class="conteudo">
+                            <div class="btns"></div>
+                        </div>
+                        <div class="tweet">
+                            <div class="titulo"></div>
+                            <img class="conteudo">
+                            <div class="btns"></div>
+                        </div>
+                        <div class="tweet">
+                            <div class="titulo"></div>
+                            <img class="conteudo">
+                            <div class="btns"></div>
+                        </div>
+                        <div class="tweet">
+                            <div class="titulo"></div>
+                            <img class="conteudo">
+                            <div class="btns"></div>
+                        </div>
+                        <div class="tweet">
+                            <div class="titulo"></div>
+                            <img class="conteudo">
+                            <div class="btns"></div>
+                        </div>
+                        <div class="tweet">
+                            <div class="titulo"></div>
+                            <img class="conteudo">
+                            <div class="btns"></div>
+                        </div>
+                    </div>
+
             </div>
 
             <div id="trends">
-                    <h2>Trends</h2>
+                    <div class="Busca">
+                        <div class="Busca fixo">
+                            <input placeholder="Buscar no twitter"></input>
+                        </div>
+                    </div>
+                    
+                    <div id="assuntos">
+                        <div class="titulo">
+                            <h3>Assuntos para você</h3>
+                            <button></button>
+                        </div>
+                        <div class="assunto">
+                            <p class="local">Assunto do momento na unesp</p>
+                            <h5>#SEMDPS</h5>
+                            <p class="quantia">100 mil Tweets</p>
+                        </div>
+                        <div class="assunto">
+                                <p class="local">Assunto do momento no mundo</p>
+                                <h5>#BiscoitoXBolacha</h5>
+                                <p class="quantia">1 bilhão Tweets</p>
+                        </div>
+                        <div class="assunto">
+                                <p class="local">Assunto do momento na computação</p>
+                                <h5>#ProgramasEficientes</h5>
+                                <p class="quantia">1 mil Tweets</p>
+                        </div>
+                        <div class="assunto">
+                                <p class="local">Assunto do momento na unesp</p>
+                                <h5>#SEMDPS</h5>
+                                <p class="quantia">100 mil Tweets</p>
+                        </div>
+                        <div class="assunto">
+                                <p class="local">Assunto do momento na unesp</p>
+                                <h5>#SEMDPS</h5>
+                                <p class="quantia">100 mil Tweets</p>
+                        </div>
+                        <div class="assunto">
+                                <p class="local">Assunto do momento na unesp</p>
+                                <h5>#SEMDPS</h5>
+                                <p class="quantia">100 mil Tweets</p>
+                        </div>
+                        <div class="assunto">
+                                <p class="local">Assunto do momento na unesp</p>
+                                <h5>#SEMDPS</h5>
+                                <p class="quantia">100 mil Tweets</p>
+                        </div>
+                        <div>
+                            <p class="mais">Mostrar mais</p>
+                        </div>
+                    </div>
+                    <div id="Seguir">
+
+                    </div>
             </div>
         </div>
     </body>

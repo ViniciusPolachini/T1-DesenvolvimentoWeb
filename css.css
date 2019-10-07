@@ -3,29 +3,30 @@
 	margin: 0;
 }
 #container{
-    grid-template-columns: 20% 55% 25%;
+    grid-template-columns: 23% 45% 32%;
     display: grid;
     margin: none;
+    height: 100vh;
 }
 
 /*NAVBAR*/
 #navbar{
     grid-column-start: 1;
     grid-column-end: 2;
-    height: 100vh;
-    border-right: solid gray 2px;
+    margin-left: 20%;
+    border-right: solid #e5e2e2  1px;
+    
 }
 
 #navbar button{
     width: 15vw;
     height: 7vh;
-    text-align: justify;
+    text-align: left;
     font-family: arial;
     font-size: 16px;
     font-weight: bold;
     border-radius: 100px;
     margin-top: 15px;
-    margin-left: 30px;
 }
 
 #navbar  img{
@@ -34,11 +35,13 @@
     display: inline-block;
     margin-right: 10%;
     background: none;
-    align-items: center;
     margin-left: 10px;
-    float: center;
 }
-
+#navbar p{
+    display:inline;
+    position: absolute;
+    margin-top:5%;
+}
 #ButtonTweet{
     background-color: #01A9DB;
     color:white;
@@ -51,13 +54,21 @@
 #ButtonTweet:hover{
     background-color: #2ECCFA !important;
 }
+.fixo{
+    position:fixed;
+    z-index: 5;
+}
 
 .nav{
     display: block;
     border-style: none;
     background-color: white;
     text-decoration:none;
+    position: relative !important;
+    margin-top:5%;
 }
+
+
 /*------------------------*/
 
 /*TWEETS*/
@@ -65,14 +76,197 @@
 grid-column-start: 2;
 grid-column-end: 3;
 }
+
+.PaginaInicial{
+    border-bottom: solid #e5e2e2  1px;
+    height: 8vh;
+    background-color: white;
+    width: 45%;
+    z-index: 2;
+}
+
+.PaginaInicial h3{
+    margin-left: 2%;
+    margin-top: 2%;
+    font-weight: bold;
+    font-family: Arial;
+    align-items: center;
+    position: absolute;
+}
+
+#tweet{
+    display: block;
+}
+#postar img{
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    margin-left: 2%;
+}
+/*#postar textarea{
+    border: none;
+    overflow: auto;
+    outline: none;
+    background: gray;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+    resize: none;
+}*/
+#postar{
+    border-bottom: solid #e5e2e2  8px;
+}
+#postar input{
+    border: none;
+    color:  #808080;
+    font-size: 100%;
+    font-weight: bold;
+    height: 10vh;
+    width: 30vh;
+    position: absolute;
+    margin-left: 1%;
+    z-index: 1;
+}
+#botoesPostar div button{
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+    border: none;
+    background: blue;
+    margin-bottom: 2%;
+    margin-top:2%;
+    padding: 10px 10px;
+}
+#botoesPostar div{
+  display: inline;
+}
+#botoesPostar .esquerda{
+    float: right;
+    margin-right: 10%;
+    margin-top:2%;
+}
+#botoesPostar .direita{
+    margin-left: 10%;
+}
+#Feed{
+    display: flex;
+    flex-direction: column;
+}
+.tweet{
+    background: green;
+    border-bottom: solid #e5e2e2  1px;
+    height: 70vh;
+    width: 100%;
+    margin-bottom: 2px;
+    display: flex;
+    flex-direction: column;
+}
+.tweet .titulo{
+    background: blueviolet;
+    height: 15%;
+}
+.tweet .btns{
+    background: red;
+    height: 10%;
+}
+.tweet .conteudo{
+    background: blue;
+    height: 70%;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 2%;
+    margin-top:2%;
+    border-radius: 20px;
+}
 /*------------------------*/
 
 /*TRENDS*/
 #trends{
     grid-column-start: 3;
     grid-column-end: 4;
-    border-left: solid gray 2px;
+    border-left: solid #e5e2e2  1px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.Busca{
+    height: 8vh;
+    background: white;
+    width: 32%;
+}
+.Busca input{
+    border: none;
+    border-radius: 100px;
+    color:#808080;
+    background:  #e5e2e2 ;
+    height: 6vh;
+    width: 56vh;
+    margin-left: 8%;
+    margin-top: 2%;
+    
+}
+.Busca input:focus{
+    border: solid #01A9DB 1px;
+    background: white;
+}
+#assuntos{
+    height: 100vh;
+    background: rgba(229, 226, 226, 0.5);
+    margin-top: 5%;
+    width: 85%;
+    margin-left: 8%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+#seguir{
+    height: 50vh;
+    background: rgba(229, 226, 226, 0.5);
+    margin-top: 5%;
+    width: 85%;
+    margin-left: 8%;
+    border-radius: 15px;
+}
+#assuntos .titulo{
+    border-bottom: solid #e5e2e2 1px;
+    height: 7vh;
+}
+#assuntos .titulo h3{
+    display: inline;
+    margin-top: 1%;
+    margin-left: 2%;
+    position: absolute;
+
+}
+#assuntos .titulo button{
+    border: none;
+    style: none;
+    height: 35px;
+    width: 35px;
+    border-radius: 100px;
+    float: right;
+    margin-right: 2%;
+    margin-top:1%;
+}
+#assuntos .assunto{
+    height:12vh;
+    border-bottom: solid #e5e2e2 1px;
+}
+#assuntos h5{
+    margin-left:2%;
+    margin-top:2%;
 }
 
-
-
+#assuntos p{
+    margin-left:2%;
+    margin-top:2%;
+    color: gray;
+    font-size:80%;
+}
+#assuntos .mais{
+    margin-left:5%;
+    margin-top:4%;
+    color: #01A9DB !important;
+    font-size:90%;
+}
