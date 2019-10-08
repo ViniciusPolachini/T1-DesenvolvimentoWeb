@@ -293,6 +293,10 @@ grid-column-end: 3;
     margin-right: 2%;
     margin-top:1%;
 }
+#assuntos .titulo button img{
+ width: 70%;
+ height: 70%;
+}
 #assuntos .assunto{
     height:12vh;
     border-bottom: solid #e5e2e2 1px;
