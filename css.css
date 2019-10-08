@@ -6,7 +6,6 @@
     grid-template-columns: 23% 45% 32%;
     display: grid;
     margin: none;
-    height: 100vh;
 }
 
 /*NAVBAR*/
@@ -123,10 +122,9 @@ grid-column-end: 3;
     font-size: 100%;
     font-weight: bold;
     height: 10vh;
-    width: 30vh;
+    width: 30vw;
     position: absolute;
     margin-left: 1%;
-    z-index: 1;
 }
 #botoesPostar div button{
     height: 40px;
@@ -136,10 +134,9 @@ grid-column-end: 3;
     background: white;
     margin-bottom: 2%;
     margin-top:2%;
-    padding: 10px 10px;
 }
 #botoesPostar div button:hover{
-    background:#01A9DB;
+    background:rgba(46, 204, 250, 0.2);;
 }
 #botoesPostar div img{
     height: 20px;
@@ -150,43 +147,82 @@ grid-column-end: 3;
   display: inline;
 }
 #botoesPostar .esquerda{
-    float: right;
-    margin-right: 10%;
-    margin-top:2%;
+    margin-left: 26%;
 }
 #botoesPostar .direita{
     margin-left: 10%;
 }
-
+#Tweetar{
+    background: #01A9DB !important;
+    color: white;
+    width: 8vw !important;
+}
+#Tweetar:hover{
+    background: #2ECCFA !important;
+}
 #Feed{
     display: flex;
     flex-direction: column;
 }
+
 .tweet{
-    background: green;
     border-bottom: solid #e5e2e2  1px;
     height: 70vh;
     width: 100%;
-    margin-bottom: 2px;
     display: flex;
     flex-direction: column;
 }
 .tweet .titulo{
-    background: blueviolet;
+    display: flex;
+    flex-direction: row;
     height: 15%;
+    margin-left:3%;
+    margin-top:2%;
+}
+.tweet .titulo img{
+    height: 8vh;
+    width: 4vw;
+    border-radius: 100px;
+}
+.tweet .titulo h5{
+    margin-top:1%;
+    margin-left:2%;
+}
+.tweet .titulo p{
+    font-size:80%;
+    margin-left:2%;
+}
+.tweet .titulo div{
+   width: 100%;
 }
 .tweet .btns{
-    background: red;
     height: 10%;
 }
+.tweet .btns button{
+    border: none;
+    style: none;
+    height: 6vh;
+    width: 3vw;
+    border-radius: 100px;
+    margin-left: 10%;
+}
+.tweet .btns button:hover{
+    background: rgba(86, 191, 223, 0.74) ;
+}
+.tweet .btns button img{
+    height: 70%;
+    width: 70%;
+}
 .tweet .conteudo{
-    background: blue;
     height: 70%;
     width: 80%;
     margin-left: 10%;
     margin-bottom: 2%;
-    margin-top:2%;
+    margin-top:1%;
     border-radius: 20px;
+}
+.tweet:hover{
+    background: rgba(229, 226, 226, 0.3);
 }
 /*------------------------*/
 
@@ -197,7 +233,6 @@ grid-column-end: 3;
     border-left: solid #e5e2e2  1px;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
 }
 .Busca{
     height: 8vh;
@@ -230,7 +265,7 @@ grid-column-end: 3;
     flex-direction: column;
 }
 #seguir{
-    height: 50vh;
+    height: 45vh;
     background: rgba(229, 226, 226, 0.5);
     margin-top: 5%;
     width: 85%;
@@ -246,8 +281,8 @@ grid-column-end: 3;
     margin-top: 1%;
     margin-left: 2%;
     position: absolute;
-
 }
+
 #assuntos .titulo button{
     border: none;
     style: none;
@@ -262,6 +297,9 @@ grid-column-end: 3;
     height:12vh;
     border-bottom: solid #e5e2e2 1px;
 }
+#assuntos .assunto:hover{
+    background: rgba(229, 226, 226, 0.9);
+}
 #assuntos h5{
     margin-left:2%;
     margin-top:2%;
@@ -273,9 +311,66 @@ grid-column-end: 3;
     color: gray;
     font-size:80%;
 }
-#assuntos .mais{
+.mais{
     margin-left:5%;
     margin-top:4%;
     color: #01A9DB !important;
     font-size:90%;
+}
+#Seguir .titulo{
+    border-bottom: solid #e5e2e2 1px;
+    height: 7vh;
+}
+#Seguir .titulo h3{
+    display: inline;
+    margin-top: 1%;
+    margin-left: 2%;
+    position: absolute;
+
+}
+#Seguir .perfil{
+    display:flex;
+    flex-direction: row;
+    height: 10vh;
+    border-bottom: solid #e5e2e2 1px;
+}
+#Seguir .perfil:hover{
+    background: rgba(229, 226, 226, 0.9);
+}
+#Seguir .perfil img{
+    border-radius: 100px;
+    height: 8vh;
+    width: 4vw;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+#Seguir .perfil h5{
+    margin-top: 20%;
+    margin-left: 5%;
+}
+#Seguir .perfil p{
+    font-size: 75%;
+    margin-left: 5%;
+    color: gray;
+}
+#Seguir .perfil button{
+    margin-left: 30%;
+    margin-top: 5%;
+    background: rgba(0, 0, 0, 0);
+    style: none;
+    border: solid 1px #01A9DB ;
+    border-radius: 100px;
+    width: 6vw;
+    height: 5vh;
+    color: #01A9DB;
+    font-weight: bold;
+}
+#Seguir .perfil button:hover{
+    background: rgba(100, 193, 221, 0.2);
+}
+#Trends footer{
+    color: gray;
+    text-align: center;
+    font-size: 80%;
+    margin-top:10%;
 }
